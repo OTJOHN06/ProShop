@@ -1,0 +1,23 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OTJOHN06/ProShop.git"
+  },
+  "author": "John Nuttall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OTJOHN06/ProShop/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "homepage": "https://github.com/OTJOHN06/ProShop#readme"
+}
