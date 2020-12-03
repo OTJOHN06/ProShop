@@ -2,10 +2,13 @@
   "name": "proshop",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "backend/server.js",
+  "type": "module",
   "scripts": {
     "start": "node backend/server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon backend/servers",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,13 @@
     "url": "https://github.com/OTJOHN06/ProShop/issues"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.2"
   },
-  "homepage": "https://github.com/OTJOHN06/ProShop#readme"
+  "homepage": "https://github.com/OTJOHN06/ProShop#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
 }
